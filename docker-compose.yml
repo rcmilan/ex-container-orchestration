@@ -1,0 +1,22 @@
+version: "3.4"
+
+services:
+  api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+    ports:
+      - 5400:80
+      - 5401:443
+    depends_on:
+      - db-server
+
+  db-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: db-server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=msSQL@123
+    ports:
+      - "5050:1433"
