@@ -1,13 +1,13 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Repository
+namespace Persistence
 {
     public class MyDbContext : DbContext
     {
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
-            this.Database.Migrate();
+            Database.Migrate();
         }
 
         public DbSet<Community> Communities { get; set; }

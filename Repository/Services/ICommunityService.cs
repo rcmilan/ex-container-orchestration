@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Repository.Services
+namespace Persistence.Services
 {
     public interface ICommunityService
     {

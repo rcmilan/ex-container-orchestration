@@ -1,7 +1,7 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Repository.Services
+namespace Persistence.Services
 {
     public class CommunityService : ICommunityService
     {

@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Services;
+using Persistence.Services;
 
 namespace Api.Controllers
 {

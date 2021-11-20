@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Repository;
-using Repository.Services;
+using Persistence;
+using Persistence.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
